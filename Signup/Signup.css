@@ -1,0 +1,332 @@
+body { 
+	font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	display: grid;
+	grid-template-areas: 
+    "header header "
+    "nav section"
+    "footer footer";
+	grid-template-rows: 80px 1fr 150px;
+	grid-template-columns: 10% 1fr;
+	grid-gap: 0px;
+  height: 100vh;
+  margin: 0px;  
+  overflow: hidden;
+  background-color: #fac2a6 !important;
+}
+/*This is just the header of the website */
+header {
+	background:#fac2a6;
+	grid-area: header;
+	font-family: Georgia, serif;
+	font-size: 50px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	text-align: center;
+	color: #b3adbf;
+  text-shadow: 2px 2px 2px #1C6EA4;
+  border-bottom: none !important;
+}
+/*Cart icon for header */
+#cart {
+	float: right;
+}
+/*This takes away the decoration that is automaically defined for the links! This is part of the side nav */
+nav a {
+	text-decoration: none;
+}
+section {
+    background:#c2c8ff;
+	grid-area: section; 
+}
+/*Cart icon for header */
+#cart {
+	float: right;
+}
+/* USUAL STUFF */
+body { margin:10px auto; text-align:center; }
+.content { max-width:800px;text-align:left; margin:auto; }
+
+footer {
+    background: #fac2a6;
+    grid-area: footer;
+    font-family: Georgia, serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #001133;
+    text-shadow: 2px 2px 2px #1C6EA4;
+    position: bottom;
+    position: sticky;
+    bottom: 0em;
+  }
+
+/*Thia is just to ensure that all rows and columns of the css grid have the same amount of padding */
+header, nav, section, footer {
+	padding: 5px;
+}
+
+/*This is the user icon that lives in the header */
+#user {
+  margin-left: 90%;
+  position: relative;
+  top: -75px;
+  /* border: 1px solid red; */
+
+}
+/*Jellyfish Logo */
+#logo {
+  /* margin-right: 1%; */
+  /* border: 1px solid red; */
+  background-color: #fcdfa2d3;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-right: 90%;
+  margin-top: 0.1%;
+}
+/*Facebook icon for footer*/
+#fb {
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Instagram icon for footer*/
+#insta {
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Twitter icon for footer */
+#twitter {
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Cart icon for header*/
+#cart {
+  position: relative;
+  top: -75px;
+  /* border: 1px solid red; */
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  grid-area: nav;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Georgia, serif;
+  padding-top: 5px;
+  letter-spacing: 0.5px;
+	word-spacing: 1px;
+	text-align: center;
+	color: #7CB9E8;
+  text-shadow: 2px 2px 2px #1C6EA4;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a img {
+  width: 15%;
+  height: 15%;
+  padding: 5%;
+  /* border: 1px solid red; */
+  margin-right: 100%;
+}
+
+#title-menu {
+  /* border: 1px solid blue; */
+  width: 10%;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  background-color: #c2c8ff;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+#new-title {
+  color: black;
+}
+
+ /* login form*/
+ form {
+    border: 3px solid #f1f1f1;
+    margin: 0 auto;
+    max-width: 400px;
+    float: left;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    filter: opacity(0.7) drop-shadow(0 0 0 rgb(85, 240, 119));
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  } 
+  /*Signup form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  } 

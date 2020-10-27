@@ -1,0 +1,205 @@
+/*The body tag just contains instructions for the css grid- the rows and columns and how much area each will take */
+body { 
+	font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	display: grid;
+	grid-template-areas: 
+    "header header header"
+    "nav section section"
+    "footer footer footer";
+	grid-template-rows: 80px 1fr 150px;
+	grid-template-columns: 11% 1fr 18%;
+	grid-gap: 0px;
+  height: 100vh;
+  margin: 0px; 
+  overflow: hidden;
+  background-color: #fac2a6 !important; 
+}
+
+/*This is just the header of the website */
+header {
+	background:#fac2a6;
+	grid-area: header;
+	font-family: Georgia, serif;
+	font-size: 50px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	text-align: center;
+	color: #b3adbf;
+  text-shadow: 2px 2px 2px #1C6EA4;
+  border-bottom: none !important;
+}
+/*This is for the side navigation to the left of the page*/
+
+nav {
+	background:#c2c8ff;
+	grid-area: nav;
+	font-family: Georgia, serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	text-align: center;
+	color: #C9BFBF;
+	text-shadow: 2px 2px 2px #1C6EA4; 
+}
+/*This takes away the decoration that is automatically defined for the links! This is part of the side nav */
+nav a {
+	text-decoration: none;
+}
+/*This is for the main contents of the page*/
+section {
+	background:#c2c8ff;
+	grid-area: section; 
+	text-shadow: 2px 2px 2px #e06f5d;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color:#ee897a;
+}
+
+/*Cart icon for header */
+#cart {
+	float: right;
+}
+
+/* USUAL STUFF */
+body { margin:10px auto; text-align:center; }
+.content { max-width:800px;text-align:left; margin:auto; }
+
+section p {
+	color: rgb(110, 81, 56);
+}
+
+
+/*This is for the footer of the website! */
+footer {
+		background: #fac2a6;
+		grid-area: footer;
+		font-family: Georgia, serif;
+		font-size: 10px;
+		letter-spacing: 2px;
+		word-spacing: 2px;
+		color: #001133;
+		text-shadow: 2px 2px 2px #1C6EA4;
+		position: bottom;
+		position: sticky;
+		bottom: 0em;
+		border-top: none !important;
+	}
+
+/*This is just to ensure that all rows and columns of the css grid have the same amount of padding */
+header, nav, section, footer {
+	padding: 5px;
+}
+/*This is the user icon that lives in the header */
+#user {
+	margin-left: 90%;
+	position: relative;
+	top: -75px;
+	/* border: 1px solid red; */
+  
+  }
+  /*Jellyfish Logo */
+  #logo {
+	/* margin-right: 1%; */
+	/* border: 1px solid red; */
+	background-color: #fcdfa2d3;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	margin-right: 90%;
+	margin-top: 0.1%;
+  }
+  /*Facebook icon for footer*/
+  #fb {
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+  /*Instagram icon for footer*/
+  #insta {
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+  /*Twitter icon for footer */
+  #twitter {
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+  /*Cart icon for header*/
+  #cart {
+	position: relative;
+	top: -75px;
+	/* border: 1px solid red; */
+  }
+  
+  .sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	grid-area: nav;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: Georgia, serif;
+	padding-top: 5px;
+	letter-spacing: 0.5px;
+	  word-spacing: 1px;
+	  text-align: center;
+	  color: #7CB9E8;
+	text-shadow: 2px 2px 2px #1C6EA4;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .sidenav a img {
+	width: 15%;
+	height: 15%;
+	padding: 5%;
+	/* border: 1px solid red; */
+	margin-right: 100%;
+  }
+  
+  #title-menu {
+	/* border: 1px solid blue; */
+	width: 10%;
+	position: absolute;
+	margin-left: 30%;
+	margin-top: 5%;
+  }
+  
+  .sidenav a:hover, .offcanvas a:focus{
+	color: #f1f1f1;
+  }
+  
+  .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px !important;
+	margin-left: 50px;
+  }
+  
+  #main {
+	transition: margin-left .5s;
+	padding: 16px;
+	background-color: #c2c8ff;
+  }
+  
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+  
+  #new-title {
+	color: black;
+  }
